@@ -1,1 +1,7 @@
-<p>test</p>
+<p>Użytkownicy</p>
+
+<ul>
+  <% @users.each do |user| %>
+    <li><%= user.name %></li>
+  <% end %>    
+</ul>
