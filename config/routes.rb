@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
+  devise_for :users
   root 'users#index'
 
-  get '/users',   to: 'users#index'
+  resources :users
+  resources :orders
+
   get '/contact', to: 'pages#contact'
   get '/about',   to: 'pages#about'
   get '/mission', to: 'pages#mission'
