@@ -7,4 +7,7 @@ class PagesController < ApplicationController
 
   def mission
   end
+
+  def career
+  end
 end
